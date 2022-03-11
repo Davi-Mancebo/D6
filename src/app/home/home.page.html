@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      D6
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">D6</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div>
+    <h1 class="ion-text-center" [class.fim]="sorteado" [class.preto]="preto" [class.sorteando]="sorteando">{{ valor }}</h1>
+  </div>
+  <ion-button expand="full" shape="round" (click)="rolar()">Rolar<ion-icon name='dice'></ion-icon></ion-button>
+  <ion-button expand="full" shape="round" (click)="limpar()">Limpar<ion-icon name="trash-bin-outline"></ion-icon>
+  </ion-button>
+
+  
+</ion-content>
